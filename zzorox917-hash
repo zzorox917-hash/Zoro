@@ -1,0 +1,11 @@
+pkg install -y git unzip
+termux-setup-storage
+cd ~/storage/downloads
+unzip zoro-mc-host.zip
+cd zoro-mc-host
+git init
+git add .
+git commit -m "Phase 1"
+git branch -M main
+git remote add origin https://github.com/zzorox917-hash/Zoro.git
+git push -u origin main --force
